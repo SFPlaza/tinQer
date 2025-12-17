@@ -1,0 +1,40 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="tinQer"
+config/description="Stanley F. Plaza's Quantum Computer Simulator, V1.0"
+config/version="1.0"
+run/main_scene="uid://c8t8w6hy1nx72"
+config/use_custom_user_dir=true
+config/features=PackedStringArray("4.5", "GL Compatibility")
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/image="uid://cf0035c7ir2hg"
+config/icon="uid://clb50wpyy4e30"
+
+[display]
+
+window/stretch/scale_mode="integer"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/default_filters/anisotropic_filtering_level=0
+viewport/hdr_2d=true
+anti_aliasing/screen_space_roughness_limiter/enabled=false
+anti_aliasing/screen_space_roughness_limiter/amount=0.01
+anti_aliasing/screen_space_roughness_limiter/limit=0.01
+textures/decals/filter=1
+textures/light_projectors/filter=1
+2d/snap/snap_2d_transforms_to_pixel=true
+2d/snap/snap_2d_vertices_to_pixel=true
